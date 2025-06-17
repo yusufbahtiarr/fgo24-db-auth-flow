@@ -6,18 +6,18 @@ erDiagram
   users }o--|| user_roles : has
   user_roles ||--o{ roles   : receives
   users{
-    int id_user
+    int id
     string name
     string password
     string email
   }
   user_roles{
     int id
-    int id_roles
+    int id_role
     int id_user
   }
   roles {
-    int id_roles
+    int id
     string name
   }
 ```
