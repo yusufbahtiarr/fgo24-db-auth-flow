@@ -8,6 +8,8 @@ erDiagram
   users{
     int id_user
     string name
+    string password
+    string email
   }
   user_roles{
     int id
