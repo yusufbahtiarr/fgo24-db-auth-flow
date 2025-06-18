@@ -49,6 +49,7 @@ VALUES
 (1,4), 
 (1,5); 
 
-select u.name as name_user, r.name as name_role from users u
+select u.id as id_user, u.name as name_user, u.email, r.name as name_role from users u
 join user_roles ur on ur.id_user = u.id
-join roles r on r.id = ur.id_role;
+join roles r on r.id = ur.id_role
+where password = '222222' and email = 'toni2@gmail.com';
